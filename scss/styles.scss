@@ -1,0 +1,374 @@
+        $bg-color: #7F7C82;
+        $unit :1rem;
+        @use'custom';
+        //* Operaciones//*
+        @function size($value) {
+            @return $value * $unit;
+        }
+        
+        @mixin reset-pm {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        //*Propiedades decorativas//*
+        $box-shadow1: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+        //  Copio estilos del css anterior para convertir a Sass ///* Reseteado de padding y margin por defecto del navegador */
+        * {
+            @include reset-pm();
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        /* De esta forma la medida a tomar para usar medidas relativas será 10px, en lugar de 16px medida por defecto del navegador */
+        
+        html {
+            font-size: 62.5%;
+        }
+        /* Fuente para todo el body importada de Google fonts*/
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        /* Elemento contenedor de la pantalla */
+        
+        .ancho__pantalla {
+            margin: size(1);
+        }
+        /* Damos propiedades a los subtítulos y etiquetas de texto */
+        
+        h1 {
+            font-size: 4rem;
+            font-weight: bolder;
+            background-color: #F0D9FF;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin: 0.1rem;
+            box-shadow: $box-shadow1;
+        }
+        
+        h2 {
+            h3 {
+                font-size: size(3);
+                font-weight: bolder;
+                color: white;
+            }
+        }
+        
+        h4 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 1rem;
+        }
+        
+        h5 {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+        
+        h6 {
+            font-size: 2rem;
+        }
+        
+        p {
+            color: rgb(253, 252, 252);
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        span {
+            margin: 1rem;
+        }
+        /* Efecto Hover sobre los distintos links simulados y reales " Ver Todos" */
+        
+        .ver_todas_categorias a:hover,
+        .ver_todos a:hover,
+        .ver_todas_marcas a:hover,
+        .ver_contacto a:hover {
+            background-color: rgb(221, 158, 211);
+            cursor: pointer;
+        }
+        
+        input {
+            font-size: 2rem;
+            transition: all 1s;
+            &:focus {
+                background-color: rgb(221, 158, 211);
+                font-weight: bolder;
+            }
+        }
+        /* Transformación a las imagenes de categoria */
+        
+        .imagenes__categorias img,
+        .imagenes_habilidades_flexibles img,
+        .imagenes_marcas_flexibles img,
+        .imagenes_productos_flexibles img {
+            transition: transform 1s ease;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .imagenes__categorias :hover img,
+        .imagenes_productos_flexibles :hover img,
+        .imagenes_marcas_flexibles :hover img,
+        .imagenes_habilidades_flexibles :hover img {
+            transform: scale(1.1);
+        }
+        /* Reutilación de propiedades para distintos listados de clases */
+        
+        .listado__categoria,
+        .listado_productos,
+        .listado_marcas,
+        .listado_habilidades {
+            background-color: #BFA2DB;
+        }
+        /* Reutilizado de propiedades para distintas páginas y clases */
+        
+        .presentacion_productos,
+        .presentacion_categorias,
+        .presentacion_marcas span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(99, 92, 100);
+        }
+        /* Formato Main de las distintas páginas */
+        
+        .sobre_elegirnos {
+            width: 100%;
+            text-align: center;
+            padding-top: 3rem;
+            h3 {
+                color: #7F7C82;
+                text-align: center;
+                font-size: 4rem;
+            }
+        }
+        
+        .nuestros_diferenciales_row,
+        .testimonios_row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nuestro_diferencial_col {
+            flex-basis: 25%;
+            background: #7F7C82;
+            margin-bottom: 5%;
+            padding: 2rem 1.2rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .nuestro_diferencial_col h4 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 1rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .nuestro_diferencial_col:hover,
+        h4 p {
+            box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);
+        }
+        
+        .nuestro_diferencial_col p {
+            background: #7F7C82;
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        .testimonios {
+            width: 80%;
+            margin: auto;
+            padding-top: 10rem;
+            text-align: center;
+            background-color: #F0D9FF;
+        }
+        
+        .testimonios_col {
+            flex-basis: 40%;
+            border-radius: 1rem;
+            margin: 2rem 2rem;
+            padding: 2.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .testimonios_col img {
+            height: 5rem;
+            margin-left: 1.5rem;
+            margin-right: 3rem;
+            border-radius: 50%;
+        }
+        
+        .testimonios_col p {
+            padding: 0px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .testimonios_col h3 {
+            margin-top: 1.6rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        
+        div .testimonios_col {
+            background: #7F7C82;
+        }
+        
+        .testimonios_col .fas {
+            font-size: 2rem;
+            text-align: center;
+        }
+        /* Cambiamos la dirección de las cards sobre nuestros servicios a columna para resoluciones menores a 1400px */
+        
+        @media (max-width:1400px) {
+            .nuestros_diferenciales_row,
+            .testimonios_row {
+                flex-direction: column;
+            }
+        }
+        
+        .encabezado_contacto {
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/imagen_contacto.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            font-size: 3rem;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .imagenes__categorias,
+        .imagenes_productos_flexibles,
+        .imagenes_marcas_flexibles,
+        .imagenes_habilidades_flexibles {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            height: auto;
+        }
+        
+        .menu .listado__categoria,
+        .todos_los_productos,
+        .todas_las_categorias,
+        .menu_marcas,
+        .menu_servicio {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: white;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .ver_todos,
+        .ver_todas_categorias,
+        .contacto_nosotros,
+        .ver_todas_marcas,
+        .ver_contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+        
+        .ver_todos {
+            background-color: $bg-color;
+        }
+        
+        h3 a,
+        .ver_todas_marcas,
+        .ver_todas_categorias {
+            display: block;
+            font-size: 4rem;
+            color: white;
+            background-color: $bg-color;
+            text-align: center;
+            width: 100%;
+        }
+        /* Formato al footer*/
+        
+        footer {
+            background-color: $bg-color;
+        }
+        
+        form,
+        p .ingresar_email {
+            font-size: 4rem;
+            text-align: center;
+        }
+        
+        .pie_flexible ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style: none;
+            li a {
+                align-self: center;
+                margin: 2rem;
+            }
+            h5 {
+                margin: 2rem;
+                box-shadow: $box-shadow1;
+                border-radius: 0.5rem;
+                padding: size(0.5);
+                justify-self: center;
+                color: white;
+            }
+        }
+        /* Definimos tamaño de imagen de Whatsapp del Aside y redes en CSS del footer */
+        
+        aside img {
+            height: 10rem;
+            width: 10rem;
+            margin: 1rem;
+        }
+        
+        .redes_icons>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 1rem;
+            align-content: space-around;
+        }
+        
+        .redes_icons img {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 1rem;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .redes_icons h6 {
+            font-size: 3rem;
+            margin: 1rem;
+            text-align: end;
+        }
+        /* Formato del botón de arrepentimiento */
+        
+        button {
+            display: block;
+            color: rgb(241, 98, 98);
+            font-size: 2rem;
+            font-weight: 900;
+            font-style: italic;
+            border: 1rem solid hsl(20, 1%, 55%);
+            border-radius: 30%;
+            margin: 2rem, ;
+        }

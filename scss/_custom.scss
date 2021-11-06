@@ -1,0 +1,39 @@
+//Padding, medidas y fuentes//*
+$fs-1:3rem;
+$bt-1:2rem;
+$fw-1:300;
+$fw-2: 400;
+$fw-3:500;
+$fw-4:700;
+$unit :1rem;
+//*Mis colores del tema//*
+$purple:#F0D9FF;
+$pink:#BFA2DB;
+$gray-300:#F3F1F5;
+$gray-700:#7F7C82;
+$white: #fff;
+$link-color:#fff;
+//*Colores Blancos y Grises//*
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+//*Colores Primarios, etc//*
+$primary: $purple;
+$secondary: $pink;
+$light: $gray-300;
+$dark: $gray-700;
+//* Botones//*
+$badge-font-size:$bt-1;
+//*Barra de navegación//*
+$nav-link-font-size :$fs-1;
+$nav-link-font-weight: $fw-4;
+//*Imporación de Bootstrapp //* 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
