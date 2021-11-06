@@ -11130,6 +11130,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navegacion {
+  background: linear-gradient(to right, rgba(222, 226, 230, 0.95), rgba(73, 80, 87, 0.95));
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -11186,7 +11190,7 @@ h6 {
 }
 
 p {
-  color: #fdfcfc;
+  color: #7F7C82;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -11241,23 +11245,26 @@ input:focus {
 
 /* Reutilizado de propiedades para distintas páginas y clases */
 .presentacion_productos,
-.presentacion_categorias,
-.presentacion_marcas span {
+.presentacion_categorias {
   font-size: 2.5rem;
   font-weight: bold;
   color: #635c64;
 }
 
 /* Formato Main de las distintas páginas */
-.sobre_elegirnos {
+.sobre__elegirnos {
   width: 100%;
   text-align: center;
   padding-top: 3rem;
 }
-.sobre_elegirnos h3 {
-  color: #7F7C82;
+.sobre__elegirnos h3 {
+  color: #fff;
   text-align: center;
   font-size: 4rem;
+  background-color: #7F7C82;
+}
+.sobre__elegirnos span {
+  font-size: 2.5rem;
 }
 
 .nuestros_diferenciales_row,
@@ -11294,28 +11301,35 @@ h4 p {
   background: #7F7C82;
   font-size: 2rem;
   text-align: center;
+  color: #fff;
 }
 
 .testimonios {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding-top: 10rem;
   text-align: center;
   background-color: #F0D9FF;
 }
+.testimonios p {
+  color: #fff;
+  font-size: 2.5rem;
+}
 
 .testimonios_col {
-  flex-basis: 40%;
+  flex-basis: 30%;
   border-radius: 1rem;
   margin: 2rem 2rem;
   padding: 2.5rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .testimonios_col img {
-  height: 5rem;
+  height: 15rem;
   margin-left: 1.5rem;
   margin-right: 3rem;
   border-radius: 50%;
@@ -11387,6 +11401,7 @@ div .testimonios_col {
   text-align: center;
 }
 
+h2 h3 a,
 .ver_todos,
 .ver_todas_categorias,
 .contacto_nosotros,
@@ -11399,19 +11414,53 @@ div .testimonios_col {
   padding: 0.5rem;
 }
 
-.ver_todos {
+.ver_todos,
+.ver_todas_categorias,
+.ver_todas_marcas,
+.ver_contacto {
   background-color: #7F7C82;
 }
 
-h3 a,
+h2,
+h3,
+.ver_contacto,
+.ver_todos,
 .ver_todas_marcas,
 .ver_todas_categorias {
   display: block;
   font-size: 4rem;
   color: white;
-  background-color: #7F7C82;
   text-align: center;
   width: 100%;
+}
+
+.historia, .presentacion_categorias, .presentacion_productos, .presentacion__marcas {
+  background-color: #dee2e6;
+}
+.historia p, .presentacion_categorias p, .presentacion_productos p, .presentacion__marcas p {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.historia--titulo {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.presentacion__marcas--titulo {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.presentacion_categorias h2, .presentacion_productos h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bolder;
 }
 
 /* Formato al footer*/
