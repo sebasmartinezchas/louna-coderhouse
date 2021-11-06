@@ -1,6 +1,8 @@
         $bg-color: #7F7C82;
         $unit :1rem;
         @use'custom';
+        //* Importo Secciones//*
+        @use'./Sections/navbar';
         //* Operaciones//*
         @function size($value) {
             @return $value * $unit;
