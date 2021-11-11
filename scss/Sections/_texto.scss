@@ -1,0 +1,40 @@
+h1 {
+    font-size: size(4);
+    font-weight: bolder;
+    background-color: $purple;
+    color: $white;
+    text-align: center;
+    padding: size(1.5);
+    margin: size(0.1);
+    box-shadow: $box-shadow1;
+}
+
+h2 {
+    h3 {
+        font-size: size(3);
+        font-weight: bolder;
+        color: $white;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+p {
+    color: $bg-color;
+    text-align: center;
+    font-size: size(2);
+    font-weight: 700;
+}

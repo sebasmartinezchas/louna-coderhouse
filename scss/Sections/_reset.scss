@@ -1,0 +1,19 @@
+* {
+    @include reset-pm();
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* De esta forma la medida a tomar para usar medidas relativas será 10px, en lugar de 16px medida por defecto del navegador */
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Elemento contenedor de la pantalla */
+
+.ancho__pantalla {
+    margin: size(1);
+}

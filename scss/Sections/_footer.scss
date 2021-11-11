@@ -1,0 +1,55 @@
+/* Formato al footer*/
+
+footer {
+    background-color: $bg-color;
+}
+
+form,
+p .ingresar_email {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.pie_flexible ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    li a {
+        align-self: center;
+        margin: 2rem;
+    }
+    h5 {
+        margin: 2rem;
+        box-shadow: $box-shadow1;
+        border-radius: 0.5rem;
+        padding: size(0.5);
+        justify-self: center;
+        color: white;
+    }
+}
+
+//* Iconos Redes Sociales//*
+.redes_icons>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1rem;
+    align-content: space-around;
+}
+
+.redes_icons img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.redes_icons h6 {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: end;
+}

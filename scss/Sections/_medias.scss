@@ -1,0 +1,8 @@
+/* Cambiamos la dirección de las cards sobre nuestros servicios a columna para resoluciones menores a 1400px */
+
+@media (max-width:1400px) {
+    .nuestros_diferenciales_row,
+    .testimonios_row {
+        flex-direction: column;
+    }
+}
