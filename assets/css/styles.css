@@ -19,7 +19,8 @@ html {
 /* Cambiamos la dirección de las cards sobre nuestros servicios a columna para resoluciones menores a 1400px */
 @media (max-width: 1400px) {
   .nuestros_diferenciales_row,
-.testimonios_row {
+.testimonios_row,
+.deposito__fila {
     flex-direction: column;
   }
 }
@@ -11513,6 +11514,64 @@ h3,
   font-size: 3.5rem;
   text-align: center;
   font-weight: bolder;
+}
+
+.depositos {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+  background-color: #7F7C82;
+}
+
+.deposito__fila {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.deposito__col {
+  display: flex;
+  flex-basis: 32%;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.deposito__col img {
+  width: 100%;
+}
+
+.deposito__capa {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.deposito__capa:hover {
+  background-color: rgba(226, 0, 0, 0.7);
+}
+.deposito__capa h3, .deposito__capa .h3 {
+  width: 100%;
+  font-weight: bolder;
+  color: #7F7C82;
+  font-size: 4rem;
+  bottom: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.deposito__capa:hover h3, .deposito__capa:hover .h3 {
+  bottom: 49%;
+  opacity: 1;
 }
 
 /* Definimos tamaño de imagen de Whatsapp del Aside y redes en CSS del footer */
