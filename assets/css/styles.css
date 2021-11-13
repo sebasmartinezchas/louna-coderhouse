@@ -34,9 +34,13 @@ footer {
 }
 
 form,
-p .ingresar_email {
-  font-size: 4rem;
+.ingresar_email {
+  font-size: 3rem;
   text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .pie_flexible ul {
@@ -80,45 +84,6 @@ p .ingresar_email {
   font-size: 3rem;
   margin: 1rem;
   text-align: end;
-}
-
-h1, .h1 {
-  font-size: 4rem;
-  font-weight: bolder;
-  background-color: #F0D9FF;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem;
-  margin: 0.1rem;
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-}
-
-h2 h3, h2 .h3, .h2 h3, .h2 .h3 {
-  font-size: 3rem;
-  font-weight: bolder;
-  color: #fff;
-}
-
-h4, .h4 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 1rem;
-}
-
-h5, .h5 {
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-h6, .h6 {
-  font-size: 2rem;
-}
-
-p {
-  color: #7F7C82;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 /*!
@@ -11256,6 +11221,48 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1, .h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  background-color: #F0D9FF;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0.1rem;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  line-height: 1.5;
+}
+
+h2 h3, .h2 h3, h2 .h3, .h2 .h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+h5, .h5 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+h6, .h6 {
+  font-size: 2rem;
+}
+
+p {
+  color: #7F7C82;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
 /* Damos propiedades a etiquetas de contenedoras */
 span {
   margin: 1rem;
@@ -11452,7 +11459,7 @@ div .testimonios_col {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: white;
+  color: #fff;
   align-items: center;
   text-align: center;
 }
@@ -11492,7 +11499,7 @@ h3,
 }
 
 .historia, .presentacion_categorias, .presentacion_productos, .presentacion__marcas {
-  background-color: #dee2e6;
+  background-color: #7F7C82;
 }
 .historia p, .presentacion_categorias p, .presentacion_productos p, .presentacion__marcas p {
   color: #fff;
@@ -11560,15 +11567,15 @@ h3,
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 2s;
 }
 .deposito__capa:hover, .categoria__capa:hover {
-  background-color: rgba(226, 0, 0, 0.7);
+  background-color: rgba(243, 128, 128, 0.7);
 }
 .deposito__capa h3, .categoria__capa h3, .deposito__capa .h3, .categoria__capa .h3 {
   width: 100%;
   font-weight: bolder;
-  color: #7F7C82;
+  color: #fff;
   font-size: 4rem;
   bottom: 0;
   transform: translateY(-50%);

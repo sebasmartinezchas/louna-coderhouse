@@ -5,9 +5,13 @@ footer {
 }
 
 form,
-p .ingresar_email {
-    font-size: 4rem;
+.ingresar_email {
+    font-size: 3rem;
     text-align: center;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 .pie_flexible ul {

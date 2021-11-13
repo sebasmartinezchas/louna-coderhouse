@@ -3,10 +3,53 @@
 @import'./Sections/reset';
 @import'./Sections/medias';
 @import'./Sections/footer';
-@import'./Sections/texto';
 @import'custom';
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: size(4);
+    font-weight: bolder;
+    background-color: $purple;
+    color: $white;
+    text-align: center;
+    padding: size(1.5);
+    margin: size(0.1);
+    box-shadow: $box-shadow1;
+    line-height: 1.5;
+}
+
+h2 {
+    h3 {
+        font-size: size(3);
+        font-weight: bolder;
+        color: $white;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+p {
+    color: $bg-color;
+    text-align: center;
+    font-size: size(2);
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 1rem;
 }
 
 
@@ -125,7 +168,7 @@ h4 p {
 }
 
 .nuestro_diferencial_col p {
-    background: #7F7C82;
+    background: $gray-700;
     font-size: 2rem;
     text-align: center;
     color: $white;
@@ -136,7 +179,7 @@ h4 p {
     margin: auto;
     padding-top: 10rem;
     text-align: center;
-    background-color: #F0D9FF;
+    background-color: $purple;
     p {
         color: $white;
         font-size: size(3);
@@ -216,7 +259,7 @@ div .testimonios_col {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: white;
+    color: $white;
     align-items: center;
     text-align: center;
 }
@@ -255,7 +298,7 @@ h3,
 }
 
 .historia {
-    background-color: $gray-300;
+    background-color: $gray-700;
     p {
         color: $white;
         font-size: size(2.5);
@@ -348,14 +391,14 @@ h3,
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.5s;
+    transition: 2s;
     &:hover {
-        background-color: rgba(226, 0, 0, 0.7);
+        background-color: rgba(243, 128, 128, 0.7);
     }
     & h3 {
         width: 100%;
         font-weight: bolder;
-        color: $bg-color;
+        color: $white;
         font-size: size(4);
         bottom: 0;
         transform: translateY(-50%);
