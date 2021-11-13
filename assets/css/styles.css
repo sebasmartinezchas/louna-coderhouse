@@ -20,7 +20,8 @@ html {
 @media (max-width: 1400px) {
   .nuestros_diferenciales_row,
 .testimonios_row,
-.deposito__fila {
+.deposito__fila,
+.productos__fila {
     flex-direction: column;
   }
 }
@@ -11574,6 +11575,48 @@ h3,
   opacity: 1;
 }
 
+.mejores__productos {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10rem;
+  background-color: #F0D9FF;
+  margin: 1rem;
+}
+.mejores__productos h3, .mejores__productos .h3 {
+  color: #7F7C82;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  padding: 1rem;
+  margin-top: 5%;
+  line-height: 1.6rem;
+}
+
+.productos__fila {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.productos__col {
+  flex-basis: 31%;
+  border-radius: 1rem;
+  margin-bottom: 5%;
+  padding: 2rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.productos__col h3, .productos__col .h3 {
+  text-align: center;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.productos__col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* Definimos tamaño de imagen de Whatsapp del Aside y redes en CSS del footer */
 aside img {
   height: 10rem;
@@ -11585,7 +11628,7 @@ aside img {
 button {
   display: block;
   color: #f16262;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
   font-style: italic;
   border: 1rem solid #8d8c8b;
