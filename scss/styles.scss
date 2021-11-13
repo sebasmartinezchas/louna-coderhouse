@@ -397,7 +397,54 @@ h3,
     }
 }
 
-//*Fin Mejores productos//*
+.nuestras__marcas {
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: $purple;
+}
+
+//*Inicio nuestras marcas//**
+.marcas__col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    & img {
+        width: 100%;
+    }
+    & h3 {
+        padding: 0;
+    }
+    & p {
+        padding: 15px 0 25px;
+    }
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        border: 1px solid $white;
+        padding: 12px 32px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+    }
+    .red-btn {
+        border: 1px solid #f44336;
+        background-color: transparent;
+        color: #f44336;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+//*Fin nuestras marcas//**
 
 /* Definimos tamaño de imagen de Whatsapp del Aside y redes en CSS del footer */
 

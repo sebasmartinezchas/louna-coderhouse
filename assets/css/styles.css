@@ -21,7 +21,8 @@ html {
   .nuestros_diferenciales_row,
 .testimonios_row,
 .deposito__fila,
-.productos__fila {
+.productos__fila,
+.marcas__fila {
     flex-direction: column;
   }
 }
@@ -11615,6 +11616,52 @@ h3,
 }
 .productos__col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nuestras__marcas {
+  width: 100%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #F0D9FF;
+}
+
+.marcas__col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.marcas__col img {
+  width: 100%;
+}
+.marcas__col h3, .marcas__col .h3 {
+  padding: 0;
+}
+.marcas__col p {
+  padding: 15px 0 25px;
+}
+.marcas__col .hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.marcas__col .hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+.marcas__col .red-btn {
+  border: 1px solid #f44336;
+  background-color: transparent;
+  color: #f44336;
+}
+.marcas__col .red-btn:hover {
+  color: #fff;
 }
 
 /* Definimos tamaño de imagen de Whatsapp del Aside y redes en CSS del footer */
