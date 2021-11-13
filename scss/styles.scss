@@ -295,7 +295,7 @@ h3,
     @extend.presentacion_categorias;
 }
 
-//*Depositos//*
+//*Depositos y otras categorias//*
 .depositos {
     width: 100%;
     margin: auto;
@@ -304,11 +304,19 @@ h3,
     background-color: $bg-color;
 }
 
+.otras__categorias {
+    @extend.depositos
+}
+
 .deposito__fila {
     display: flex;
     justify-content: center;
     margin: size(2);
     gap: size(1);
+}
+
+.categorias__fila {
+    @extend.deposito__fila
 }
 
 .deposito__col {
@@ -321,7 +329,15 @@ h3,
     flex-wrap: wrap;
 }
 
+.categoria__col {
+    @extend.deposito__col
+}
+
 .deposito__col img {
+    width: 100%;
+}
+
+.categoria__col img {
     width: 100%;
 }
 
@@ -349,7 +365,16 @@ h3,
     }
 }
 
+.categoria__capa {
+    @extend.deposito__capa
+}
+
 .deposito__capa:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.categoria__capa:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
@@ -424,7 +449,7 @@ h3,
         color: $white;
         border: 1px solid $white;
         padding: 12px 32px;
-        font-size: 13px;
+        font-size: 24px;
         background: transparent;
         position: relative;
         cursor: pointer;
