@@ -11230,7 +11230,6 @@ h1, .h1 {
   padding: 1.5rem;
   margin: 0.1rem;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  line-height: 1.5;
 }
 
 h2 h3, .h2 h3, h2 .h3, .h2 .h3 {
@@ -11259,7 +11258,6 @@ p {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1.5;
   margin: 1rem;
 }
 
@@ -11320,6 +11318,11 @@ input:focus {
 }
 
 /* Formato Main de las distintas páginas */
+.bienvenida p {
+  font-size: 3rem;
+  color: #7F7C82;
+}
+
 .sobre__elegirnos {
   width: 100%;
   text-align: center;
@@ -11358,7 +11361,7 @@ input:focus {
   font-weight: 600;
   margin: 1rem;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 .nuestro_diferencial_col:hover,
@@ -11437,6 +11440,9 @@ div .testimonios_col {
   text-align: center;
   padding: 2rem;
 }
+.encabezado_contacto p {
+  color: #fff;
+}
 
 .imagenes__categorias,
 .imagenes_productos_flexibles,
@@ -11493,7 +11499,7 @@ h3,
 .ver_todas_categorias {
   display: block;
   font-size: 4rem;
-  color: white;
+  color: #fff;
   text-align: center;
   width: 100%;
 }

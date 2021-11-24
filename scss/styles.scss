@@ -17,7 +17,6 @@ h1 {
     padding: size(1.5);
     margin: size(0.1);
     box-shadow: $box-shadow1;
-    line-height: 1.5;
 }
 
 h2 {
@@ -29,18 +28,18 @@ h2 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: size(2);
     font-weight: 700;
-    margin: 1rem;
+    margin: size(1);
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: size(2);
     font-weight: bolder;
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: size(2);
 }
 
 p {
@@ -48,7 +47,6 @@ p {
     text-align: center;
     font-size: size(2);
     font-weight: 700;
-    line-height: 1.5;
     margin: 1rem;
 }
 
@@ -71,7 +69,7 @@ span {
 }
 
 input {
-    font-size: 2rem;
+    font-size: size(2);
     transition: all 1s;
     &:focus {
         background-color: rgb(221, 158, 211);
@@ -105,7 +103,7 @@ input {
 .listado_productos,
 .listado_marcas,
 .listado_habilidades {
-    background-color: #BFA2DB;
+    background-color: $pink;
 }
 
 
@@ -113,13 +111,20 @@ input {
 
 .presentacion_productos,
 .presentacion_categorias {
-    font-size: 2.5rem;
+    font-size: size(2.5);
     font-weight: bold;
     color: rgb(99, 92, 100);
 }
 
 
 /* Formato Main de las distintas páginas */
+
+.bienvenida {
+    p {
+        font-size: size(3);
+        color: $gray-700;
+    }
+}
 
 .sobre__elegirnos {
     width: 100%;
@@ -146,7 +151,7 @@ input {
 
 .nuestro_diferencial_col {
     flex-basis: 25%;
-    background: #7F7C82;
+    background: $gray-700;
     margin-bottom: 5%;
     padding: 2rem 1.2rem;
     border-radius: 1rem;
@@ -155,11 +160,11 @@ input {
 }
 
 .nuestro_diferencial_col h4 {
-    font-size: 3rem;
+    font-size: size(3);
     font-weight: 600;
     margin: 1rem;
     text-align: center;
-    color: white;
+    color: $white;
 }
 
 .nuestro_diferencial_col:hover,
@@ -169,7 +174,7 @@ h4 p {
 
 .nuestro_diferencial_col p {
     background: $gray-700;
-    font-size: 2rem;
+    font-size: size(2);
     text-align: center;
     color: $white;
 }
@@ -215,15 +220,15 @@ h4 p {
     margin-top: 1.6rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: size(2.5);
 }
 
 div .testimonios_col {
-    background: #7F7C82;
+    background: $gray-700;
 }
 
 .testimonios_col .fas {
-    font-size: 2rem;
+    font-size: size(2);
     text-align: center;
 }
 
@@ -236,6 +241,9 @@ div .testimonios_col {
     font-size: size(4);
     text-align: center;
     padding: size(2);
+    p {
+        color: $white;
+    }
 }
 
 .imagenes__categorias,
@@ -292,7 +300,7 @@ h3,
 .ver_todas_categorias {
     display: block;
     font-size: size(4);
-    color: white;
+    color: $white;
     text-align: center;
     width: 100%;
 }
