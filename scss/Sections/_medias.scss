@@ -1,12 +1,12 @@
-/* Cambiamos la dirección de las cards sobre nuestros servicios a columna para resoluciones menores a 1400px */
-
-@media (max-width:1400px) {
-    .nuestros_diferenciales_row,
-    .testimonios_row,
-    .deposito__fila,
-    .productos__fila,
-    .marcas__fila,
-    .categoria__fila {
-        flex-direction: column;
+    /* Cambiamos la dirección de las cards sobre nuestros servicios a columna para resoluciones menores a 1400px */
+    
+    @media (max-width:1400px) {
+        .nuestros_diferenciales_row,
+        .testimonios_row,
+        .deposito__fila,
+        .productos__fila,
+        .marcas__fila,
+        .categoria__fila {
+            flex-direction: column;
+        }
     }
-}
